@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. `rails new rails-react-todo --webpack=react`
+2. `rails g controller todos index`
+3. in config/routes.rb
 
-Things you may want to cover:
+   ```rb
+       root 'todos#index'
+   ```
 
-* Ruby version
+4. in app/view/layouts/application.html.erb, before closing head tag:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   ```html
+   <% javascript_pack_tag 'hello_react %>
+   ```
