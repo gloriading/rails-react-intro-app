@@ -1,5 +1,7 @@
 # README
 
+Learning source: https://blog.logrocket.com/how-to-use-react-ruby-on-rails/
+
 1. `rails new rails-react-todo --webpack=react`
 2. `rails g controller todos index`
 3. in config/routes.rb
